@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head Start-->
+    <head>
+        <meta charset="utf-8" />
+        <title>Loc8 | Mi. - Coming Soon</title>
+        <meta name="description" content="Responsive, Bootstrap, BS4" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Styles-->
+        <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Are+You+Serious&family=Arya:wght@400;700&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rozha+One&display=swap" rel="stylesheet">
+    </head>
+
+<!-- Particle Background-->
+    <div id ="particles"></div>
+
+<!-- Header Class Start-->
+<header class="header">
+    <a href="#" class="nav-title">Loc8<span class="nav-title-divide">|</span>M<span class="nav-titleispan">i.</span></a>
+    <!-- Nav Bar Start-->
+    <nav class="navbar">
+        <a href="#" >Mission</a>
+        <a href="#" >Contact</a>
+        <button>Roadmap</button>
+    </nav> 
+</header> 
+
+    <!-- Body Start-->
+    <body>
+       <h1>Coming Soon</h1>
+       
+        <!-- Content Section(s)-->
+
+        <!-- JavaScript Plugins-->
+        <!-- jQuery -->
+        <script src="../libs/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- ajax page -->
+        <script src="../libs/pjax/pjax.min.js"></script>
+        <script src="../assets/js/ajax.js"></script>
+        <!-- lazyload plugin -->
+        <script src="../assets/js/lazyload.config.js"></script>
+        <script src="../assets/js/lazyload.js"></script>
+        <script src="../assets/js/plugin.js"></script>
+        <!-- scrollreveal -->
+        <script src="../libs/scrollreveal/dist/scrollreveal.min.js"></script>
+        <!-- feathericon -->
+        <script src="../libs/feather-icons/dist/feather.min.js"></script>
+        <script src="../assets/js/plugins/feathericon.js"></script>
+        <!-- theme -->
+        <script src="../assets/js/theme.js"></script>
+        <script src="../assets/js/utils.js"></script>
+        <!-- Particle.JS  Plugin -->
+        <script src="/assets/js/particles.min.js"></script>
+        <script src="/assets/js/custom.js"></script>
+
+        <script>
+            const buttonWrapper = document.getElementById("buttonWrapper");
+          
+            // Update CSS variables for gradient effect on mousemove
+            buttonWrapper.addEventListener("mousemove", (e) => {
+              const rect = buttonWrapper.getBoundingClientRect();
+              const x = e.clientX - rect.left; // x position within the element
+              const y = e.clientY - rect.top; // y position within the element
+          
+              // Convert position to degrees for conic-gradient rotation
+              const r2 = ((x / rect.width) * 360) % 360;
+          
+              // Update CSS variables
+              buttonWrapper.style.setProperty("--r2", `${r2}deg`);
+              buttonWrapper.style.setProperty("--x", `${x}px`);
+            });
+          </script>
+          
+    </body>
+</html>
