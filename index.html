@@ -3,7 +3,7 @@
     <!--Head Start-->
     <head>
         <meta charset="utf-8" />
-        <title>Loc8 | Mi. - Home</title>
+        <title>Loc8|Mi. - Welcome</title>
         <meta name="description" content="Responsive, Bootstrap, BS4" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <!-- Styles-->
@@ -22,8 +22,38 @@
     <!-- Body Start-->
     <body>
         <nav id="sidebar">
-            <ul class="active">
-                <a href="index.html></a>
+            <ul>
+                <li>
+                    <span class="navlogo">Loc8|Mi</span>
+                    <button class="navbtn">
+                        
+                    </button>
+                </li>
+                
+                
+                    
+                    
+                <li class="active">
+                    <a href="index.html">
+                        <span>Welcome<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Project Roadmap</span>
+                    </a>
+                </li>
+                <li>
+                     <a href="#">
+                        <span>Mission</span>
+                    </a>
+                </li>
+                <li>
+                     <a href="#">
+                        <span>Contact</span>
+                    </a>
+                </li>
+                 
             </ul>
         </nav>
         <main>
@@ -55,24 +85,5 @@
         <!-- Particle.JS  Plugin -->
         <script src="/assets/js/particles.min.js"></script>
         <script src="/assets/js/custom.js"></script>
-
-        <script>
-            const buttonWrapper = document.getElementById("buttonWrapper");
-          
-            // Update CSS variables for gradient effect on mousemove
-            buttonWrapper.addEventListener("mousemove", (e) => {
-              const rect = buttonWrapper.getBoundingClientRect();
-              const x = e.clientX - rect.left; // x position within the element
-              const y = e.clientY - rect.top; // y position within the element
-          
-              // Convert position to degrees for conic-gradient rotation
-              const r2 = ((x / rect.width) * 360) % 360;
-          
-              // Update CSS variables
-              buttonWrapper.style.setProperty("--r2", `${r2}deg`);
-              buttonWrapper.style.setProperty("--x", `${x}px`);
-            });
-          </script>
-          
     </body>
 </html>
